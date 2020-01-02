@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+}
+
+.title {
+    color: blue;
+}
+
+.released {
+    color: blueviolet;
+}
+
+.tagline {
+    color: red;
+}

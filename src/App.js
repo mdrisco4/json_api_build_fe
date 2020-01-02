@@ -2,16 +2,35 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios'
 
-axios.get('http://localhost:8080/')
-.then(res =>{
-  console.log(res)
-})
+import ListMovies from './Components/ListMovies'
+import SubmissionForm from './Components/SubmissionForm';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      movieData: []
+    }
+  }
+
+  componentDidMount(){
+    axios.get('http://localhost:8080/')
+    .then(res =>{
+      // console.log(res.data)
+      this.setState({
+        movieData:res.data
+      })
+      // console.log(this.state)
+      // const data = res
+    })
+  }
   render() {
     return (
       <div>
-        <h1>Hello!</h1>
+        <h1>Movies and Stuff!</h1>
+        <ListMovies movieData={this.state.movieData}/>
+        <SubmissionForm />
+        {/* <DetailMovie/> */}
       </div>
     );
   }
