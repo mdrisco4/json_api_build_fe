@@ -1,3 +1,7 @@
+// Primary frontend done here
+
+
+
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios'
@@ -29,7 +33,7 @@ class App extends Component {
       <div>
         <h1>Movies and Stuff!</h1>
         <ListMovies movieData={this.state.movieData}/>
-        <h2>Submit a Movie</h2>
+        <h2>Submit a Movie!!!</h2>
         <SubmissionForm />
         {/* <DetailMovie/> */}
       </div>
