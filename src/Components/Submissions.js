@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Styles/SubmissionForm.css'
 
 class Submissions extends Component {
     constructor(props) {
@@ -21,6 +22,8 @@ class Submissions extends Component {
         const { title, release_date, tagline, runtime, overview, revenue } = this.state
         return (
             <div>
+                   <h2>Submit a Movie!!!</h2>
+        {/* <SubmissionForm /> */}
                 <div className='form-container'>
                     <form>
                         <input

@@ -1,15 +1,18 @@
 // Primary frontend done here
 
 
+// import ListMovies from './Components/ListMovies';
+// import SubmissionForm from './Components/SubmissionForm';
 
 import React, { Component } from 'react';
 import './App.css';
-import axios from 'axios'
-import{ Route, Link, /*switch*/ } from 'react-router-dom'
-import { BrowserRouter as Router } from "react-router-dom"
-import ListMovies from './Components/ListMovies'
-import SubmissionForm from './Components/SubmissionForm'
-import Submissions from './Components/submissions';
+import axios from 'axios';
+import { BrowserRouter as Router, /*Switch,*/ Route } from "react-router-dom";
+import Navigation from './Components/Navigation';
+import Home from './Components/Home';
+import Movies from './Components/Movies';
+import Actors from './Components/Actors';
+import Submissions from './Components/Submissions';
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +20,9 @@ class App extends Component {
     this.state = {
       movieData: []
     }
+    // console.log(this.state.movieData)
   }
+  
 
   componentDidMount(){
     axios.get('http://localhost:8080/')
@@ -26,39 +31,38 @@ class App extends Component {
       this.setState({
         movieData:res.data
       })
-      // console.log(this.state)
+      // console.log(this.state.movieData)
       // const data = res
     })
   }
   render() {
+    // console.log(this.state.movieData)
     return (
       <div>
+      <h1>Movies and Stuff!</h1>
+  {/* <ListMovies movieData={this.state.movieData}/> */}
         <Router>
-          <nav>
-            <Link className='nav-links'
-              id='Home'>
-              <h3 className="title" >Home</h3>
-            </Link>
-            <Link className='nav-links'
-              id='Movies'>
-              <h3 className="title" >Movies</h3>
-            </Link>
-            <Link className='nav-links'
-              id='Actors'>
-              <h3 className="title" >Actors</h3>
-            </Link>
-            <Link className='nav-links'
-              id='Submissions'>
-              <h3 className="title" >Submissions</h3>
-            </Link>
-          </nav>
-        <h1>Movies and Stuff!</h1>
+          <Navigation />
+          <Route path="/home"
+              component={Home}/>
+            <Route path="/movies"
+              component={Movies}
+              movieData={this.state.movieData}
+              // render={routerProps => (
+              //   <Movies
+              // {...routerProps}
+              // {...this.state}
+              // />)}
+              />
+            <Route path="/actors"
+              component={Actors}/>
+            <Route path="/submissions"
+              component={Submissions}/>
         </Router>
-        <ListMovies movieData={this.state.movieData}/>
-        <h2>Submit a Movie!!!</h2>
-        <SubmissionForm />
+            {/* <h2>Submit a Movie!!!</h2>
+        <SubmissionForm /> */}
 
-
+{/* 
         <Router>
           <Route
             path="/home"/>
@@ -72,7 +76,7 @@ class App extends Component {
             <Submissions/>
             )}
             />
-        </Router>
+        </Router> */}
       </div>
     );
   }
