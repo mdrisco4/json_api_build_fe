@@ -12,8 +12,14 @@ class SubmissionForm extends Component {
             overview: '',
             revenue: ''
         }
-    }
+        this.onChange = this.onChange.bind(this)
+        }
+        onChange = e => {
+            this.setState({ [e.target.name]: e.target.value })
+            console.log(this.state)
+        }
     render() {
+        const { title, release_date, tagline, runtime, overview, revenue } = this.state
         return (
             <div>
                 <form>
@@ -36,10 +42,10 @@ class SubmissionForm extends Component {
                         onChange={this.onChange}
                     />
                     <input
-                            type="text"
-                            placeholder="length (in minutes)"
-                            value={runtime}
-                            onChange={this.onChange}
+                        type="text"
+                        placeholder="length (in minutes)"
+                        value={runtime}
+                        onChange={this.onChange}
                     />
                     <input
                         type="text"
@@ -58,5 +64,6 @@ class SubmissionForm extends Component {
         );
     }
 }
+
 
 export default SubmissionForm;
