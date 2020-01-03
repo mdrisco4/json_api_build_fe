@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.actor-listing {
+    border: 4px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+}
+
+.name {
+    /* color: blue; */
+}
+
+.birthday {
+    font-weight: bold;
+}
+
+.birthplace {
+    font-style: italic;
+}

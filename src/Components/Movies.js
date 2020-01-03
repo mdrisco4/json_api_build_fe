@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import '../Styles/ListMovies.css'
+import '../Styles/Movies.css'
 
 // import App from '../App'
 // import { render } from '@testing-library/react';
@@ -13,7 +13,7 @@ class Movies extends Component {
           }
     }
     componentDidMount(){
-        axios.get('http://localhost:8080/')
+        axios.get('http://localhost:8080/movies')
         .then(res =>{
           this.setState({
             movieData:res.data

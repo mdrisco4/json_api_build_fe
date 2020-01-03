@@ -10,12 +10,14 @@ class Navigation extends Component {
     render() {
         return (
             <div>
-                <nav>
-                    <Link to="/home" className='nav-links'>home</Link>
-                    <Link to="/movies"className='nav-links'>Movies</Link>
-                    <Link to="/actors"className='nav-links'>Actors</Link>
-                    <Link to="/submissions"className='nav-links'>Submissions</Link>
-                </nav>
+                <div className='nav-bar'>
+                    <nav>
+                        <Link to="/home" className='nav-links'>home</Link>
+                        <Link to="/movies"className='nav-links'>Movies</Link>
+                        <Link to="/actors"className='nav-links'>Actors</Link>
+                        <Link to="/submissions"className='nav-links'>Submissions</Link>
+                    </nav>
+                </div>
             <Router>
                 <Route
                     path="/home"

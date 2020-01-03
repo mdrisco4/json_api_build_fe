@@ -1,0 +1,10 @@
+.nav-bar {
+    border: 2px solid black;
+    /* width: 50%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    text-align: start;
+}

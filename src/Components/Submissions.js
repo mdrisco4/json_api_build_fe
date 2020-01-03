@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../Styles/SubmissionForm.css'
+import '../Styles/Submissions.css'
 
 class Submissions extends Component {
     constructor(props) {
@@ -60,6 +60,7 @@ class Submissions extends Component {
                             onChange={this.onChange}
                         />
                         <input
+                            // align="top"
                             className='entries'
                             id='entry-parag'
                             type="text"

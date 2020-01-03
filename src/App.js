@@ -25,7 +25,7 @@ class App extends Component {
   
 
   componentDidMount(){
-    axios.get('http://localhost:8080/')
+    axios.get('http://localhost:8080/movies')
     .then(res =>{
       // console.log(res.data)
       this.setState({
@@ -45,15 +45,22 @@ class App extends Component {
           <Navigation />
           <Route path="/home"
               component={Home}/>
-            <Route path="/movies"
-              component={Movies}
+          <Route path="/movies"
+              component={Movies}/>
+              
+
+            {/* <Route path="/movies" render={() => (<Movie movieProps={this.state}>)}/> */}
+              {/* <Movies movieProps={this.state} /> */}
+              {/* component={Movies}
               movieData={this.state.movieData}
-              // render={routerProps => (
-              //   <Movies
-              // {...routerProps}
+              // render={routerProps => ( */}
+              {/* //   <Movies */}
+              {/* // {...routerProps}
               // {...this.state}
-              // />)}
-              />
+              // />)} */}
+              {/* </Route> */}
+
+
             <Route path="/actors"
               component={Actors}/>
             <Route path="/submissions"
