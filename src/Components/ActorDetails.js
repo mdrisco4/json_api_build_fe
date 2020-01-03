@@ -11,7 +11,7 @@ class ActorDetails extends Component {
           }
     }
     componentDidMount(){
-        const url = 'http://localhost:8080/actors?'
+        const url = 'http://localhost:8080/actors/id?'
         const id = this.props.match.params.id;
 
         // axios.get(`http://localhost:8080//movies/${movie._id}`)
@@ -31,10 +31,7 @@ class ActorDetails extends Component {
         return (
             <div>
                 <h1>sbchjsc</h1>
-                {/* <p>`${movie._id}`</p> */}
                 <h3>actor</h3>
-                {/* <p>`${this.props.match.params}`</p> */}
-                {/* <p>id</p> */}
             </div>
         );
     }

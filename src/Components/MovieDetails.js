@@ -30,10 +30,7 @@ class MovieDetails extends Component {
     render() {
         return (
             <div>
-                {/* <p>`${movie._id}`</p> */}
                 <h3>movie</h3>
-                {/* <p>`${this.props.match.params}`</p> */}
-                {/* <p>id</p> */}
             </div>
         );
     }
