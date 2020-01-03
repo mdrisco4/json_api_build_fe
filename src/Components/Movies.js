@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../Styles/Movies.css'
-import { BrowserRouter as Router, Link, /*Switch,*/ Route } from "react-router-dom";
-
-// import App from '../App'
-// import { render } from '@testing-library/react';
+import { BrowserRouter as router, Link, /*Switch,*/ Route } from "react-router-dom";
 
 class Movies extends Component {
     constructor(props) {
@@ -16,6 +13,7 @@ class Movies extends Component {
     componentDidMount(){
         axios.get('http://localhost:8080/movies')
         .then(res =>{
+        //   console.log(res.data)
           this.setState({
             movieData:res.data
           })
@@ -33,8 +31,7 @@ render(){
                 <h3 className='title'>{movie.title}</h3>
                 <p className='released'>{movie.release_date}</p>
                 <p className='tagline'>{movie.tagline}</p>
-                {/* <
-                <button>More Details</button> */}
+                <Link to={`/movies/${movie._id}`} >More Details</Link>
             </div>
         )
     })
@@ -51,30 +48,4 @@ render(){
         }
     }
 
-
 export default Movies;
-
-
-
-// const ListMovies = (props) => {
-// let {movieData} = props
-// let list = movieData.map(movie => {
-//     // console.log(movie)
-//     return (
-//         <div key={movie._id} className='movie-listing'>
-//             <h3 className='title'>{movie.title}</h3>
-//             <p className='released'>{movie.release_date}</p>
-//             <p className='tagline'>{movie.tagline}</p>
-//             <button>More Details</button>
-//         </div>
-//     )
-
-// });
-//     return (
-// <div>
-//     {/* <p>Hello</p> */}
-//     {list}
-// </div>
-//     )
-// };
-
