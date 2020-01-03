@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import{ Route, Link, /*switch*/ } from 'react-router-dom'
 import { BrowserRouter as Router } from "react-router-dom"
-import Home from './Home';
+import Home from './About';
 import Movies from './Movies';
 import Actors from './Actors';
 import Submissions from './Submissions';
@@ -12,13 +12,18 @@ class Navigation extends Component {
             <div>
                 <div className='nav-bar'>
                     <nav>
-                        <Link to="/home" className='nav-links'>home</Link>
+                        <Link to="/" className='nav-links'>Home</Link>
+                        <Link to="/about" className='nav-links'>About</Link>
                         <Link to="/movies"className='nav-links'>Movies</Link>
                         <Link to="/actors"className='nav-links'>Actors</Link>
                         <Link to="/submissions"className='nav-links'>Submissions</Link>
                     </nav>
                 </div>
             <Router>
+                <Route
+                    path="/"
+                    // component={Home}
+                    />
                 <Route
                     path="/home"
                     component={Home}/>

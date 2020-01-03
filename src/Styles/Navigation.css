@@ -1,7 +1,9 @@
 .nav-bar {
+    /* display: flex;
+    justify-content: center; */
     border: 2px solid black;
     /* width: 50%; */
-    margin-left: auto;
+    margin-left: 300px;
     margin-right: auto;
 }
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../Styles/Movies.css'
+import { BrowserRouter as Router, Link, /*Switch,*/ Route } from "react-router-dom";
 
 // import App from '../App'
 // import { render } from '@testing-library/react';
@@ -32,7 +33,8 @@ render(){
                 <h3 className='title'>{movie.title}</h3>
                 <p className='released'>{movie.release_date}</p>
                 <p className='tagline'>{movie.tagline}</p>
-                <button>More Details</button>
+                {/* <
+                <button>More Details</button> */}
             </div>
         )
     })

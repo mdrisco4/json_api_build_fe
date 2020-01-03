@@ -7,9 +7,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-import { BrowserRouter as Router, /*Switch,*/ Route } from "react-router-dom";
+import { BrowserRouter as Router, Link, /*Switch,*/ Route } from "react-router-dom";
 import Navigation from './Components/Navigation';
-import Home from './Components/Home';
+import About from './Components/About';
 import Movies from './Components/Movies';
 import Actors from './Components/Actors';
 import Submissions from './Components/Submissions';
@@ -39,51 +39,35 @@ class App extends Component {
     // console.log(this.state.movieData)
     return (
       <div>
-      <h1>Movies and Stuff!</h1>
   {/* <ListMovies movieData={this.state.movieData}/> */}
         <Router>
           <Navigation />
-          <Route path="/home"
-              component={Home}/>
+          {/* <nav>
+            <Link to="/" className='nav-links'>Home</Link>
+            <Link to="/about" className='nav-links'>About</Link>
+            <Link to="/movies"className='nav-links'>Movies</Link>
+            <Link to="/actors"className='nav-links'>Actors</Link>
+            <Link to="/submissions"className='nav-links'>Submissions</Link>
+          </nav> */}
+        {/* <h1>Movies and Stuff!</h1> */}
+        <header>
+        <h1>Movies and Stuff!</h1>
+        </header>
+        <main>
+          <p>Top of Main: Always Here</p>
+          <Route path="/About"
+              component={About}/>
           <Route path="/movies"
               component={Movies}/>
-              
-
-            {/* <Route path="/movies" render={() => (<Movie movieProps={this.state}>)}/> */}
-              {/* <Movies movieProps={this.state} /> */}
-              {/* component={Movies}
-              movieData={this.state.movieData}
-              // render={routerProps => ( */}
-              {/* //   <Movies */}
-              {/* // {...routerProps}
-              // {...this.state}
-              // />)} */}
-              {/* </Route> */}
-
-
-            <Route path="/actors"
+          <Route path="/actors"
               component={Actors}/>
-            <Route path="/submissions"
+          <Route path="/submissions"
               component={Submissions}/>
-        </Router>
-            {/* <h2>Submit a Movie!!!</h2>
-        <SubmissionForm /> */}
-
-{/* 
-        <Router>
-          <Route
-            path="/home"/>
-          <Route
-            path="/movies"/>
-          <Route
-            path="/actors"/>
-          <Route
-            path="/submissions"
-            render={routerProps => (
-            <Submissions/>
-            )}
-            />
-        </Router> */}
+        </main>
+              </Router>
+        <footer>
+          <p>Footer</p>
+        </footer>
       </div>
     );
   }
@@ -91,4 +75,17 @@ class App extends Component {
 
 export default App;
 
+
+
+
+{/* <Route path="/movies" render={() => (<Movie movieProps={this.state}>)}/> */}
+{/* <Movies movieProps={this.state} /> */}
+{/* component={Movies}
+movieData={this.state.movieData}
+// render={routerProps => ( */}
+{/* //   <Movies */}
+{/* // {...routerProps}
+// {...this.state}
+// />)} */}
+{/* </Route> */}
 

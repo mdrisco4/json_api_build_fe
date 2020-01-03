@@ -82,6 +82,7 @@ class Submissions extends Component {
                         </div>
                     </form>
                 </div>
+                    <button>Submit Movie Entry</button>
             </div>
         );
     }
