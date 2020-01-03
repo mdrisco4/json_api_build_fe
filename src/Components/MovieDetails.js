@@ -11,12 +11,12 @@ class MovieDetails extends Component {
           }
     }
     componentDidMount(){
-        const url = 'http://localhost:8080/movies/id?'
+        const url = 'http://localhost:8080/movies/id'
         const id = this.props.match.params.id;
 
         // axios.get(`http://localhost:8080//movies/${movie._id}`)
-        // axios.get('http://localhost:8080/movies')
-        axios.get(url + `${id}`)
+        axios.get('http://localhost:8080/movies/id')
+        // axios.get(url + `${id}`)
         .then(res =>{
             console.log(res.data)
             console.log(this.props.match.params.id)
