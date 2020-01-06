@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import '../Styles/Submissions.css'
 
 class Submissions extends Component {
@@ -76,7 +76,7 @@ class Submissions extends Component {
                 revenue: this.state.revenue,
             };
             console.log(newMovie)
-            // axios.post('http://localhost:8080/movies/add', newMovie).then(res => console.log(res.data))
+            axios.post('http://localhost:8080/movies/add', newMovie).then(res => console.log(res.data))
 
             this.setState({
                 title: " ",

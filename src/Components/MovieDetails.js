@@ -21,7 +21,7 @@ class MovieDetails extends Component {
 
         // axios.get(`http://localhost:8080//movies/${movie._id}`)
 
-        axios.get('http://localhost:8080/movies/') 
+        axios.get('http://localhost:8080/movies/' + this.props.match.params.id) 
         // + this.props.match.params.id)
         // axios.get(url + `${id}`)
         .then(res =>{
@@ -40,6 +40,18 @@ class MovieDetails extends Component {
         })
       }
     render() {
+
+        let data = this.state.movieData
+        // console.log(data)
+        let list = data.map(movie => {
+    return(
+        <div key={movie._id} className='movie-listing'>
+            <h3 className='title'>{movie.title}</h3>
+            <p className='released'>{movie.release_date}</p>
+            <p className='tagline'>{movie.tagline}</p>
+        </div>
+    )
+        })
         return (
             <div>
                 <h3>movie</h3>
