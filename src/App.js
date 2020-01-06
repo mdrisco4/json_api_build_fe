@@ -35,24 +35,14 @@ class App extends Component {
         movieData:res.data
       })
       // console.log(this.state.movieData)
-      // const data = res
     })
   }
   render() {
     // console.log(this.state.movieData)
     return (
       <div>
-  {/* <ListMovies movieData={this.state.movieData}/> */}
         <Router>
           <Navigation />
-          {/* <nav>
-            <Link to="/" className='nav-links'>Home</Link>
-            <Link to="/about" className='nav-links'>About</Link>
-            <Link to="/movies"className='nav-links'>Movies</Link>
-            <Link to="/actors"className='nav-links'>Actors</Link>
-            <Link to="/submissions"className='nav-links'>Submissions</Link>
-          </nav> */}
-        {/* <h1>Movies and Stuff!</h1> */}
         <header>
         <h1>Movies and Stuff!</h1>
         </header>
@@ -73,7 +63,7 @@ class App extends Component {
         </main>
               </Router>
         <footer>
-          <p>Footer</p>
+          <p>copyright, data source and other attribution info</p>
         </footer>
       </div>
     );
@@ -83,16 +73,12 @@ class App extends Component {
 export default App;
 
 
+// Route path="/movies" render={() => (<Movie movieProps={this.state}>)}
+// Movies movieProps={this.state}
 
-
-{/* <Route path="/movies" render={() => (<Movie movieProps={this.state}>)}/>
-<Movies movieProps={this.state} />
-component={Movies}
-movieData={this.state.movieData}
-render={routerProps => (
-<Movies
-{...routerProps}
-{...this.state}
-/>)}
-</Route> */}
-
+// component={Movies}
+// movieData={this.state.movieData}
+// render={routerProps => (
+//   Movies
+//   {...routerProps}
+//   {...this.state}

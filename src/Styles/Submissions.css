@@ -32,20 +32,27 @@ form {
     text-align: center;
     height: 30px;
     width: 180px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     background-color: black;
     color: deeppink;
 }
 
-#tagline {
+::placeholder {
+    color: red;
+    font-weight: bold;
+    opacity: 75%;
+}
+
+.tagline-id {
     width: 390px;
 }
 
-#entry-parag {
+.entry-parag-id {
     width: 390px;
     height: 100px;
-    text-align: left;
+    /* text-align: left; */
     /* text; */
     padding-left:0;
     padding-top:0;
@@ -61,4 +68,5 @@ button {
     border: 2px solid aqua;
     background-color: black;
     color: red;
+    font-weight: bold;
 }

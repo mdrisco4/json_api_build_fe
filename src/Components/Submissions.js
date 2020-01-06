@@ -113,8 +113,7 @@ class Submissions extends Component {
                             onChange={this.onChange}
                         />
                         <input
-                            className='entries'
-                            id='tagline'
+                            className='entries tagline-id'
                             type="text"
                             name='tagline'
                             placeholder="tagline"
@@ -130,8 +129,7 @@ class Submissions extends Component {
                             onChange={this.onChange}
                         />
                         <input
-                            className='entries'
-                            id='entry-parag'
+                            className='entries entry-parag-id'
                             type="text"
                             name='overview'
                             placeholder="synopsis"

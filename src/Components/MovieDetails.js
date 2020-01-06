@@ -55,6 +55,7 @@ class MovieDetails extends Component {
         return (
             <div>
                 <h3>movie</h3>
+                {list}
             </div>
         );
     }
