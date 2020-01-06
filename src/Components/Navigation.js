@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import{ Route, Link, /*switch*/ } from 'react-router-dom'
 import { BrowserRouter as Router } from "react-router-dom"
+import '../Styles/Navigation.css'
 import Home from './About';
 import Movies from './Movies';
 import Actors from './Actors';

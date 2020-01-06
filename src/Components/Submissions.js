@@ -114,7 +114,7 @@ class Submissions extends Component {
                         />
                         <input
                             className='entries'
-                            // id='tagline'
+                            id='tagline'
                             type="text"
                             name='tagline'
                             placeholder="tagline"
@@ -131,7 +131,7 @@ class Submissions extends Component {
                         />
                         <input
                             className='entries'
-                            // id='entry-parag'
+                            id='entry-parag'
                             type="text"
                             name='overview'
                             placeholder="synopsis"

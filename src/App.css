@@ -5,3 +5,17 @@ nav {
 .nav-links {
   margin-right: 30px;
 }
+
+header {
+  background-color: black;
+  color: aqua;
+  margin: 0;
+  border-top: 10px solid black;
+}
+
+footer {
+  background-color: black;
+  color: aqua;
+  height: 240px;
+
+}

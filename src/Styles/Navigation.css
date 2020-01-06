@@ -4,7 +4,14 @@
     border: 2px solid black;
     /* width: 50%; */
     margin-left: 300px;
-    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    
+    margin: 0;
+}
+
+.nav-links {
+    color: yellow;
 }
 
 nav{

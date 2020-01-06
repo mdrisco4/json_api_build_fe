@@ -31,7 +31,7 @@ render(){
                 <h3 className='title'>{movie.title}</h3>
                 <p className='released'>{movie.release_date}</p>
                 <p className='tagline'>{movie.tagline}</p>
-                <Link to={`/movies/${movie._id}`} >More Details</Link>
+                <Link className='details' to={`/movies/${movie._id}`} >More Details</Link>
             </div>
         )
     })

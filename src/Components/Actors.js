@@ -31,7 +31,7 @@ render() {
                 <h3 className='name'>{actor.name}</h3>
                 <p className='birthday'>{actor.birthday}</p>
                 <p className='birthplace'>{actor.place_of_birth}</p>
-                <Link to={`/actor/${actor._id}`} >More Details</Link>
+                <Link className='details' to={`/actor/${actor._id}`} >More Details</Link>
             </div>
         )
     })
