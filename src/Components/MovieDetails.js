@@ -21,10 +21,11 @@ class MovieDetails extends Component {
 
         // axios.get(`http://localhost:8080//movies/${movie._id}`)
 
-        axios.get('http://localhost:8080/movies/' + this.props.match.params.id)
+        axios.get('http://localhost:8080/movies/') 
+        // + this.props.match.params.id)
         // axios.get(url + `${id}`)
         .then(res =>{
-            console.log(res)
+            console.log(res.data)
             console.log(this.props.match.params.id)
           this.setState({
             title: res.title,

@@ -30,7 +30,7 @@ class App extends Component {
   componentDidMount(){
     axios.get('http://localhost:8080/movies')
     .then(res =>{
-      console.log(res.data)
+      // console.log(res.data)
       this.setState({
         movieData:res.data
       })
