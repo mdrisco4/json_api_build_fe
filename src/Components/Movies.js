@@ -35,7 +35,7 @@ render(){
                         <p className='tagline'>"{movie.tagline}"</p>
                         <Link className='details' to={`/movies/${movie._id}`} >More Details</Link>
                     </div>
-                    <img src=''className='photo' alt='pic'/>
+                    <img src=''className='photo' alt='movie poster pic'/>
                 </div>
             </div>
         )

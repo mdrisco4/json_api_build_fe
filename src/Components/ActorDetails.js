@@ -35,6 +35,19 @@ class ActorDetails extends Component {
         // })
       }
     render() {
+
+        // let data = this.state.movieData
+        // console.log(data)
+
+    //     let list = data.map(movie => {
+    // return(
+    //     <div key={movie._id} className='movie-listing'>
+    //         <h3 className='name'>{actor.name}</h3>
+    //         <p className='birthday'>{actor.birthday}</p>
+    //         <p className='birthplace'>{actor.place_of_birth}</p>
+    //     </div>
+    // )
+        // })
         return (
             <div>
                 <h3>actor</h3>

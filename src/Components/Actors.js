@@ -33,9 +33,9 @@ render() {
                         <h3 className='name'>{actor.name}</h3>
                         <p className='birthday'>{actor.birthday}</p>
                         <p className='birthplace'>{actor.place_of_birth}</p>
-                        <Link className='details' to={`/actor/${actor._id}`} >More Details</Link>
+                        <Link className='details' to={`/actors/${actor._id}`} >More Details</Link>
                     </div>
-                    <img src=''className='photo' alt='pic'/>
+                    <img src=''className='photo' alt='headshot pic'/>
                 </div>
             </div>
         )
