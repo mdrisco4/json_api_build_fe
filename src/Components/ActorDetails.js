@@ -50,16 +50,21 @@ class ActorDetails extends Component {
         // })
         return (
             <div>
-                <h3>actor</h3>
-                <p>name</p>
-                <p>aliases/nicknames</p>
-                <p>birthday</p>
-                <p>birthplace</p>
-                <p>imdb id and link</p>
-                <p>bio</p>
-                <p>actor credits</p>
-                <p>director credits</p>
-                <p>producer credits</p>
+                <div className='actor-listing actor-listing-detailed'>
+                    <div className='actor-text-details'>
+                        <h3>actor</h3>
+                        <p>name</p>
+                        <p>aliases/nicknames</p>
+                        <p>birthday</p>
+                        <p>birthplace</p>
+                        <p>imdb id and link</p>
+                        <p>bio</p>
+                        <p>actor credits</p>
+                        <p>director credits</p>
+                        <p>producer credits</p>
+                    </div>
+                    <img src=''className='actor-photo-details' alt='headshot pic'/>
+                </div>
                 {/* {list} */}
             </div>
         );

@@ -14,10 +14,10 @@ class Navigation extends Component {
                 <div className='nav-bar'>
                     <nav>
                         <Link to="/" className='nav-links'>Home</Link>
-                        <Link to="/about" className='nav-links'>About</Link>
                         <Link to="/movies"className='nav-links'>Movies</Link>
                         <Link to="/actors"className='nav-links'>Actors</Link>
                         <Link to="/submissions"className='nav-links'>Submissions</Link>
+                        <Link to="/about" className='nav-links'>About</Link>
                     </nav>
                 </div>
             <Router>
@@ -25,9 +25,6 @@ class Navigation extends Component {
                     path="/"
                     // component={Home}
                     />
-                <Route
-                    path="/home"
-                    component={Home}/>
                 <Route
                     path="/movies"
                     component={Movies}/>
@@ -38,6 +35,9 @@ class Navigation extends Component {
                     path="/submissions"
                     component={Submissions}
                     />
+                <Route
+                    path="/about"
+                    component={Home}/>
             </Router>
             </div>
         );

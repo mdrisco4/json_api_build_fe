@@ -50,16 +50,21 @@ class MovieDetails extends Component {
         // })
         return (
             <div>
-                <h3>movie</h3>
-                <p>title</p>
-                <p>release date</p>
-                <p>tagline</p>
-                <p>runtime</p>
-                <p>description</p>
-                <p>revenue</p>
-                <p>rated: </p>
-                <p>reviews</p>
-                <p>comments section</p>
+                <div className='movie-listing movie-listing-detailed'>
+                    <div className='movie-text-details'>
+                        <h3>movie</h3>
+                        <p>title</p>
+                        <p>release date</p>
+                        <p>tagline</p>
+                        <p>runtime</p>
+                        <p>description</p>
+                        <p>revenue</p>
+                        <p>rated: </p>
+                        <p>reviews</p>
+                        <p>comments section</p>
+                    </div>
+                    <img src=''className='movie-photo-details' alt='movie poster pic'/>
+                </div>
                 {/* {list} */}
             </div>
         );

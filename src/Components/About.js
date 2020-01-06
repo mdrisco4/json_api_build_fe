@@ -8,7 +8,6 @@ class About extends Component {
                 <div className='about'>
                     <h2>About</h2>
                     <p>This is a database in which you can view Movie and Actor info and submit new entries!</p>
-                    <p>--search function here?--</p>
                 </div>
             </div>
         );

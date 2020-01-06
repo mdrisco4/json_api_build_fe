@@ -10,12 +10,12 @@ import './App.css';
 import axios from 'axios';
 import { BrowserRouter as Router, /*Link, Switch,*/ Route } from "react-router-dom";
 import Navigation from './Components/Navigation';
-import About from './Components/About';
 import Movies from './Components/Movies';
 import MovieDetails from './Components/MovieDetails';
 import Actors from './Components/Actors';
 import ActorDetails from './Components/ActorDetails';
 import Submissions from './Components/Submissions';
+import About from './Components/About';
 
 class App extends Component {
   constructor(props) {
@@ -48,8 +48,6 @@ class App extends Component {
         </header>
         <main>
           <p>Top of Main: Always Here</p>
-            <Route path="/About"
-                component={About}/>
             <Route path="/movies"
                 exact component={Movies}/>              
             <Route path="/movies/:id"
@@ -60,6 +58,9 @@ class App extends Component {
                 component={ActorDetails}/>
             <Route path="/submissions"
                 component={Submissions}/>
+            <Route path="/About"
+                component={About}/>
+        <p>--search function here?--</p>
         </main>
         </Router>
         <footer>

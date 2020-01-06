@@ -92,9 +92,10 @@ class Submissions extends Component {
         const { title, release_date, tagline, runtime, overview, revenue } = this.state
         return (
             <div>
-                   <h2>Submit a Movie!!!</h2>
-        {/* <SubmissionForm /> */}
-                <div className='form-container'>
+                <div className='forms-container'>
+                <div className='movies'>
+                   <h2 id='movie-submit-line'>Submit a Movie!!!</h2>
+                <div className='form-container movie-form-container'>
                     <form onSubmit={this.Submit}>
                         <input
                             className='entries'
@@ -151,6 +152,69 @@ class Submissions extends Component {
                             <button>Submit Movie Entry</button>
                         </div>
                     </form>
+                    </div>
+                </div>
+                <div className='actors'>
+                <h2  id='actor-submit-line'>Submit an Actor!!!</h2>
+                <div className='form-container actor-form-container'>
+                    <form onSubmit={this.Submit}>
+                        <input
+                            className='entries'
+                            type="text"
+                            name='title'
+                            placeholder="title"
+                            value={title}
+                            onChange={this.onChange}
+                        />
+                        <input
+                            className='entries'
+                            type="text"
+                            name='release_date'
+                            placeholder="release date (yyyy-mm-dd)"
+                            value={release_date}
+                            onChange={this.onChange}
+                        />
+                        <input
+                            className='entries tagline-id'
+                            type="text"
+                            name='tagline'
+                            placeholder="tagline"
+                            value={tagline}
+                            onChange={this.onChange}
+                        />
+                        <input
+                            className='entries'
+                            type="text" 
+                            name='runtime'
+                            placeholder="length (in minutes)"
+                            value={runtime}
+                            onChange={this.onChange}
+                        />
+                        <input
+                            className='entries entry-parag-id'
+                            type="text"
+                            name='overview'
+                            placeholder="synopsis"
+                            value={overview}
+                            onChange={this.onChange}
+                        />
+                        <div id='box-office'>
+                            <label>$</label>
+                            <input
+                                className='entries'
+                                type="text"
+                                name='revenue'
+                                placeholder="box office receipts"
+                                value={revenue}
+                                onChange={this.onChange}
+                            />
+                        </div>
+                        <div>
+                            <button>Submit Actor Entry</button>
+                        </div>
+                    </form>
+                </div>
+                </div>
                 </div>
             </div>
         );
