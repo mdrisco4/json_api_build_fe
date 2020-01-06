@@ -31,8 +31,8 @@ render(){
                 <div key={movie._id} className='movie-listing'>
                     <div className="text-container">
                         <h3 className='title'>{movie.title}</h3>
-                        <p className='released'>{movie.release_date}</p>
-                        <p className='tagline'>{movie.tagline}</p>
+                        <p className='released'>Release Date: {movie.release_date}</p>
+                        <p className='tagline'>"{movie.tagline}"</p>
                         <Link className='details' to={`/movies/${movie._id}`} >More Details</Link>
                     </div>
                     <img src=''className='photo' alt='pic'/>

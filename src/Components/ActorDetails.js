@@ -27,16 +27,27 @@ class ActorDetails extends Component {
         //     console.log(this.props.match.params.id)
         //   this.setState({
         //     actor:res.data
+        // 
+        // 
+        // 
+        // 
         // })
-        // // console.log(this.props.match)
-        // console.log(url + `${id}`)
         // })
       }
     render() {
         return (
             <div>
-                <h1>sbchjsc</h1>
                 <h3>actor</h3>
+                <p>name</p>
+                <p>aliases/nicknames</p>
+                <p>birthday</p>
+                <p>birthplace</p>
+                <p>imdb id and link</p>
+                <p>bio</p>
+                <p>actor credits</p>
+                <p>director credits</p>
+                <p>producer credits</p>
+                {/* {list} */}
             </div>
         );
     }

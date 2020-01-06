@@ -36,7 +36,7 @@ class MovieDetails extends Component {
       }
     render() {
 
-        let data = this.state.movieData
+        // let data = this.state.movieData
         // console.log(data)
 
     //     let list = data.map(movie => {

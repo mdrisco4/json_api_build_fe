@@ -44,24 +44,24 @@ class App extends Component {
         <Router>
           <Navigation />
         <header>
-        <h1>Movies and Stuff!</h1>
+          <h1>Movies and Stuff!</h1>
         </header>
         <main>
           <p>Top of Main: Always Here</p>
-          <Route path="/About"
-              component={About}/>
-          <Route path="/movies"
-              exact component={Movies}/>              
-          <Route path="/movies/:id"
-              component={MovieDetails}/>
-          <Route path="/actors"
-              exact component={Actors}/>
-          <Route path="/actors/:id"
-              component={ActorDetails}/>
-          <Route path="/submissions"
-              component={Submissions}/>
+            <Route path="/About"
+                component={About}/>
+            <Route path="/movies"
+                exact component={Movies}/>              
+            <Route path="/movies/:id"
+                component={MovieDetails}/>
+            <Route path="/actors"
+                exact component={Actors}/>
+            <Route path="/actors/:id"
+                component={ActorDetails}/>
+            <Route path="/submissions"
+                component={Submissions}/>
         </main>
-              </Router>
+        </Router>
         <footer>
           <p>copyright, data source and other attribution info</p>
         </footer>
