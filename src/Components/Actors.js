@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../Styles/Actors.css'
-import { BrowserRouter as /*Router,*/ Link, /*Switch,*/ /*Route*/ } from "react-router-dom";
+import { BrowserRouter as Router, Link, /*Switch,*/ Route } from "react-router-dom";
 
 class Actors extends Component {
     constructor(props) {
